@@ -21,6 +21,7 @@ python github_scraper.py
 Example Output:
 
 [
+
     {'label': 'aaamoon/copilot-gpt4-service', 'link': 'https://github.com/aaamoon/copilot-gpt4-service'},
     
     {'label': 'keiyoushi/extensions', 'link': 'https://github.com/keiyoushi/extensions'},
@@ -28,6 +29,7 @@ Example Output:
     {'label': 'keiyoushi/extensions-source', 'link': 'https://github.com/keiyoushi/extensions-source'},
     
     # ... (truncated for brevity)
+    
 ]
 
 🤝Contributing:
