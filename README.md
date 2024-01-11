@@ -8,6 +8,7 @@ Outputs the data in a structured format for analysis.
 Easy-to-use and customizable for your specific needs.
 
 Usage:
+
 1.Clone the repository:
 git clone https://github.com/bhavna3/github-web-scraper.git
 
@@ -18,10 +19,14 @@ pip install -r requirements.txt
 python github_scraper.py
 
 Example Output:
+
 [
     {'label': 'aaamoon/copilot-gpt4-service', 'link': 'https://github.com/aaamoon/copilot-gpt4-service'},
+    
     {'label': 'keiyoushi/extensions', 'link': 'https://github.com/keiyoushi/extensions'},
+    
     {'label': 'keiyoushi/extensions-source', 'link': 'https://github.com/keiyoushi/extensions-source'},
+    
     # ... (truncated for brevity)
 ]
 
