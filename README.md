@@ -1,42 +1,45 @@
-# GitHub-Web-Scraper
+# GitHub Web Scraper
 
-📈 A Python web scraping tool for extracting information about trending repositories on GitHub. This script collects data on popular programming languages, frameworks, and projects currently trending on GitHub, providing valuable insights into the latest trends in the developer community.
+📈 GitHub Web Scraper is a Python web scraping tool designed to extract information about trending repositories on GitHub. This script gathers data on popular programming languages, frameworks, and trending projects, providing valuable insights into the latest trends in the developer community.
 
-Features:
-Retrieves trending repository names and links.
-Outputs the data in a structured format for analysis.
-Easy-to-use and customizable for your specific needs.
+## Features
 
-Usage:
+- Retrieves trending repository names and links.
+- Outputs the data in a structured format for analysis.
+- Easy-to-use and customizable for your specific needs.
 
-1.Clone the repository:
-git clone https://github.com/bhavna3/github-web-scraper.git
+## Usage
 
-2.Install the required dependencies:
-pip install -r requirements.txt
+1. **Clone the Repository:**
+   ```bash
+   git clone https://github.com/bhavna3/github-web-scraper.git
+   ```
 
-3.Run the script:
-python github_scraper.py
+2. **Install Required Dependencies:**
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-Example Output:
+3. **Run the Script:**
+   ```bash
+   python github_scraper.py
+   ```
 
+## Example Output
+
+```python
 [
-
-    {'label': 'aaamoon/copilot-gpt4-service', 'link': 'https://github.com/aaamoon/copilot-gpt4-service'},
-    
-    {'label': 'keiyoushi/extensions', 'link': 'https://github.com/keiyoushi/extensions'},
-    
-    {'label': 'keiyoushi/extensions-source', 'link': 'https://github.com/keiyoushi/extensions-source'},
-    
-    # ... (truncated for brevity)
-    
+  {'label': 'aaamoon/copilot-gpt4-service', 'link': 'https://github.com/aaamoon/copilot-gpt4-service'},
+  {'label': 'keiyoushi/extensions', 'link': 'https://github.com/keiyoushi/extensions'},
+  {'label': 'keiyoushi/extensions-source', 'link': 'https://github.com/keiyoushi/extensions-source'},
+  # ... (truncated for brevity)
 ]
+```
 
-🤝Contributing:
-Contributions are welcome! If you encounter any issues or have suggestions for improvement, feel free to open an issue or submit a pull request.
+## Contributing
 
-⚠️Disclaimer:
-This tool is intended for educational and research purposes. Use responsibly and in compliance with GitHub's terms of service.
+🤝 Contributions are welcome! If you encounter any issues or have suggestions for improvement, feel free to open an issue or submit a pull request.
 
-📄License:
-This project is licensed under the MIT License.
+⚠️ **Disclaimer:** This tool is intended for educational and research purposes. Use responsibly and in compliance with GitHub's terms of service.
+
+📄 **License:** This project is licensed under the MIT License.
