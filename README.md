@@ -1,40 +1,86 @@
-# GitHub Web Scraper
+# GitHub Data Extraction via API Integration
 
-📈 GitHub Web Scraper is a Python web scraping tool designed to extract information about trending repositories on GitHub. This script gathers data on popular programming languages, frameworks, and trending projects, providing valuable insights into the latest trends in the developer community.
+This project focuses on leveraging Induced AI API for extracting data from GitHub. By sending a URL and a natural language query, users can retrieve structured data without the need for custom scraping scripts. 
 
-## Features
+## Key Features
 
-- Retrieves trending repository names and links.
-- Outputs the data in a structured format for analysis.
-- Easy-to-use and customizable for your specific needs.
+- **Utilizes Requests Library**: Interacts seamlessly with the Induced AI API for efficient data extraction.
+  
+- **Streamlined Data Retrieval**: Enables users to acquire structured data by simply submitting a URL and a natural language query, bypassing the necessity for bespoke scraping scripts.
+  
+- **Polling Mechanism Implementation**: Incorporates a robust polling mechanism to monitor the extraction status, guaranteeing the completion of data retrieval.
+  
+- **Robust Error Handling**: Proactively manages various issues such as unsuccessful requests or JSON parsing errors, ensuring smooth script execution.
+  
+- **Output in JSON Format**: Upon successful completion, presents extracted data encompassing repository names, authors, stars, and URLs in a standardized JSON format for easy consumption and analysis.
+
 
 ## Usage
 
-1. **Clone the Repository:**
-   ```bash
-   git clone https://github.com/bhavna3/github-web-scraper.git
+To utilize the GitHub Data Extraction repository for extracting data from GitHub:
+
+1. **Clone the Repository**: Clone the GitHub Data Extraction repository to your local machine using the following command:
+   ```
+   git clone https://github.com/your-username/GitHub-Data-Extraction.git
    ```
 
-2. **Install Required Dependencies:**
-   ```bash
+2. **Install Dependencies**: Navigate to the cloned repository directory and install the required dependencies using pip:
+   ```
+   cd GitHub-Data-Extraction
    pip install -r requirements.txt
    ```
 
-3. **Run the Script:**
-   ```bash
-   python github_scraper.py
+3. **Set Up API Key**: Obtain an API key from Induced AI and replace `YOUR_API_KEY` in the script with your actual API key.
+
+4. **Run the Script**: Execute the Python script `extract_trending_repos.py` to start the data extraction process:
+   ```
+   python extract_trending_repos.py
    ```
 
-## Example Output
+5. **Monitor Progress**: The script will interact with the Induced AI API to extract trending repositories from GitHub. Monitor the extraction progress and wait for the process to complete.
 
-```python
-[
-  {'label': 'aaamoon/copilot-gpt4-service', 'link': 'https://github.com/aaamoon/copilot-gpt4-service'},
-  {'label': 'keiyoushi/extensions', 'link': 'https://github.com/keiyoushi/extensions'},
-  {'label': 'keiyoushi/extensions-source', 'link': 'https://github.com/keiyoushi/extensions-source'},
-  # ... (truncated for brevity)
-]
-```
+6. **Retrieve Extracted Data**: Upon completion, the script will print the extracted data including repository names, authors, stars, and URLs in JSON format.
+
+7. **Explore Data**: Explore the extracted data for analysis or further processing as per your requirements.
+
+This usage guide provides step-by-step instructions for setting up and running your GitHub Web Scraper script. Adjustments can be made based on specific requirements or preferences.
+
+##  Example output
+
+{
+    "repositories": [
+        {
+            "name": "awesome-python",
+            "author": "vinta",
+            "stars": 101893,
+            "repository_url": "[https://github.com/vinta/awesome-python](https://github.com/vinta/awesome-python)"
+        },
+        {
+            "name": "system-design-primer",
+            "author": "donnemartin",
+            "stars": 101800,
+            "repository_url": "[https://github.com/donnemartin/system-design-primer](https://github.com/donnemartin/system-design-primer)"
+        },
+        {
+            "name": "public-apis",
+            "author": "public-apis",
+            "stars": 99410,
+            "repository_url": "[https://github.com/public-apis/public-apis](https://github.com/public-apis/public-apis)"
+        },
+        {
+            "name": "Python",
+            "author": "TheAlgorithms",
+            "stars": 96110,
+            "repository_url": "[https://github.com/TheAlgorithms/Python](https://github.com/TheAlgorithms/Python)"
+        },
+        {
+            "name": "thefuck",
+            "author": "nvbn",
+            "stars": 86164,
+            "repository_url": "[https://github.com/nvbn/thefuck](https://github.com/nvbn/thefuck)"
+        }
+    ]
+}
 
 ## Contributing
 
