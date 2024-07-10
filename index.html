@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Extractor</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1>Data Extractor</h1>
+        <form id="extract-form">
+            <div class="mb-3">
+                <label for="url" class="form-label">URL</label>
+                <input type="text" class="form-control" id="url" name="url" required>
+            </div>
+            <div class="mb-3">
+                <label for="query" class="form-label">Query</label>
+                <input type="text" class="form-control" id="query" name="query" required>
+            </div>
+            <div class="mb-3">
+                <label for="columns" class="form-label">Columns</label>
+                <input type="text" class="form-control" id="columns" name="columns" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Extract</button>
+        </form>
+        <div id="result" class="mt-5"></div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#extract-form').on('submit', function(event) {
+                event.preventDefault();
+                $('#result').html('<div class="spinner-border" role="status"><span class="visually-hidden">Loading...</span></div>');
+                $.ajax({
+                    url: '/extract',
+                    method: 'POST',
+                    data: $(this).serialize(),
+                    success: function(response) {
+                        console.log("Response received:", response);
+                        $('#result').html('<pre>' + JSON.stringify(response, null, 4) + '</pre>');
+                    },
+                    error: function(xhr) {
+                        console.log("Error response:", xhr);
+                        $('#result').html('<div class="alert alert-danger">Error: ' + xhr.responseJSON.error + '</div>');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
