@@ -1,4 +1,4 @@
-# GitHub Data Extraction via API Integration
+# Data Extraction via API Integration
 
 This project focuses on leveraging Induced AI API for extracting data from GitHub. By sending a URL and a natural language query, users can retrieve structured data without the need for custom scraping scripts. 
 
@@ -17,16 +17,16 @@ This project focuses on leveraging Induced AI API for extracting data from GitHu
 
 ## Usage
 
-To utilize the GitHub Data Extraction repository for extracting data from GitHub:
+To utilize the Data Extraction repository for extracting data from GitHub:
 
-1. **Clone the Repository**: Clone the GitHub Data Extraction repository to your local machine using the following command:
+1. **Clone the Repository**: Clone the Data Extraction repository to your local machine using the following command:
    ```
-   git clone https://github.com/your-username/GitHub-Data-Extraction.git
+   git clone https://github.com/your-username/Data-Extraction.git
    ```
 
 2. **Install Dependencies**: Navigate to the cloned repository directory and install the required dependencies using pip:
    ```
-   cd GitHub-Data-Extraction
+   cd Data-Extraction
    pip install -r requirements.txt
    ```
 
