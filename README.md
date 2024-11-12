@@ -86,6 +86,3 @@ This usage guide provides step-by-step instructions for setting up and running y
 
 🤝 Contributions are welcome! If you encounter any issues or have suggestions for improvement, feel free to open an issue or submit a pull request.
 
-⚠️ **Disclaimer:** This tool is intended for educational and research purposes. Use responsibly and in compliance with GitHub's terms of service.
-
-📄 **License:** This project is licensed under the MIT License.
