@@ -11,7 +11,7 @@ payload = {
 }
 
 headers = {
-    "x-api-key": "6601af6c3a4f1e12fc59ebe5",
+    "x-api-key": "API_KEY",
     "Content-Type": "application/json"
 }
 
