@@ -3,7 +3,7 @@ import requests
 import json
 import time
 
-app = Flask(__name__, template_folder='C:/Users/saikeerthana/OneDrive/Desktop/new proj/data_extraction_env/templates')
+app = Flask(__name__, template_folder='path')
 
 @app.route('/')
 def index():
